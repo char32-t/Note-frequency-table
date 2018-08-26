@@ -1,0 +1,107 @@
+#include <windows.h>
+/*音符频率表
+音符 频率/HZ 半周期/us 音符 频率/HZ 半周期/us
+------------------------------------------
+低1DO 262     1908   #4FA#   740     0676
+#1DO# 277     1805   中5SO   784     0638
+低2RE 294     1700   #5SO#   831     0602
+#2RE# 311     1608   中6LA   880     0568
+低3M  330     1516   #6LA#   932     0536
+低4FA 349     1433   中7SI   988     0506
+#4FA# 370     1350   高1DO   1046    0478
+低5SO 392     1276   #DO#    1109    0451
+#5SO# 415     1205   高2RE   1175    0426
+低6LA 440     1136   #2RE#   1245    0402
+#6LA# 466     1072   高3M    1318    0372
+低7SI 494     1012   高4FA   1397    0358
+中1DO 523     0956   #4FA#   1480    0338
+#1DO# 554     0903   高5SO   1568    0319
+中2RE 578     0842   #5S0#   1661    0292
+#2RE# 622     0804   高6LA   1760    0284
+中3M  659     0759   #6LA#   1865    0268
+中4FA 698     0716   高7SI   1976    0253
+------------------------------------------
+("#"表示半音,用于上升或下降半个音)
+*/
+#define ONE_BEEP 600
+#define HALF_BEEP 300
+
+#define NOTE_1 440
+#define NOTE_2 495
+#define NOTE_3 550
+#define NOTE_4 587
+#define NOTE_5 660
+#define NOTE_6 733
+#define NOTE_7 825
+#define NOTE_NONE Sleep(ONE_BEEP);
+//《送别》
+int main() {
+    Beep(NOTE_5, ONE_BEEP);
+    Beep(NOTE_3, HALF_BEEP);
+    Beep(NOTE_5, HALF_BEEP);
+    Beep(NOTE_1*2, ONE_BEEP*2);
+
+    Beep(NOTE_6, ONE_BEEP);
+    Beep(NOTE_1*2, ONE_BEEP);
+    Beep(NOTE_5, ONE_BEEP*2);
+
+    Beep(NOTE_5, ONE_BEEP);
+    Beep(NOTE_1, HALF_BEEP);
+    Beep(NOTE_2, HALF_BEEP);
+    Beep(NOTE_3, ONE_BEEP);
+    Beep(NOTE_2, HALF_BEEP);
+    Beep(NOTE_1, HALF_BEEP);
+    Beep(NOTE_2, ONE_BEEP*4);
+
+    Beep(NOTE_5, ONE_BEEP);
+    Beep(NOTE_3, HALF_BEEP);
+    Beep(NOTE_5, HALF_BEEP);
+    Beep(NOTE_1*2, HALF_BEEP*3);
+    Beep(NOTE_7, HALF_BEEP);
+    Beep(NOTE_6, ONE_BEEP);
+    Beep(NOTE_1*2, ONE_BEEP);
+    Beep(NOTE_5, ONE_BEEP*2);
+
+    Beep(NOTE_5, ONE_BEEP);
+    Beep(NOTE_2, HALF_BEEP);
+    Beep(NOTE_3, HALF_BEEP);
+    Beep(NOTE_4, HALF_BEEP*3);
+    Beep(NOTE_7/2, HALF_BEEP);
+    Beep(NOTE_1, ONE_BEEP*4);
+
+    Beep(NOTE_6, ONE_BEEP);
+    Beep(NOTE_1*2, ONE_BEEP);
+    Beep(NOTE_1*2, ONE_BEEP*2);
+
+    Beep(NOTE_7, ONE_BEEP);
+    Beep(NOTE_6, HALF_BEEP);
+    Beep(NOTE_7, HALF_BEEP);
+    Beep(NOTE_1*2, ONE_BEEP*2);
+
+    Beep(NOTE_6, HALF_BEEP);
+    Beep(NOTE_7, HALF_BEEP);
+    Beep(NOTE_1*2, HALF_BEEP);
+    Beep(NOTE_6, HALF_BEEP);
+    Beep(NOTE_6, HALF_BEEP);
+    Beep(NOTE_5, HALF_BEEP);
+    Beep(NOTE_3, HALF_BEEP);
+    Beep(NOTE_1, HALF_BEEP);
+    Beep(NOTE_2, ONE_BEEP*4);
+
+    Beep(NOTE_5, ONE_BEEP);
+    Beep(NOTE_3, HALF_BEEP);
+    Beep(NOTE_5, HALF_BEEP);
+    Beep(NOTE_1*2, HALF_BEEP*3);
+    Beep(NOTE_7, HALF_BEEP);
+    Beep(NOTE_6, ONE_BEEP);
+    Beep(NOTE_1*2, ONE_BEEP);
+    Beep(NOTE_5, ONE_BEEP*2);
+
+    Beep(NOTE_5, ONE_BEEP);
+    Beep(NOTE_2, HALF_BEEP);
+    Beep(NOTE_3, HALF_BEEP);
+    Beep(NOTE_4, HALF_BEEP*3);
+    Beep(NOTE_7/2, HALF_BEEP);
+    Beep(NOTE_1, ONE_BEEP*3);
+    return 0;
+}
