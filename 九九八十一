@@ -1,0 +1,1110 @@
+#include <windows.h>
+//q前缀为低音，g为高音，s前缀为半音阶 
+const int q1 = 131;  
+const int q2 = 147;  
+const int q3 = 165;  
+const int q4 = 175;  
+const int q5 = 196;  
+const int q6 = 220;  
+const int q7 = 247;
+
+const int p1 = 262;  
+const int p2 = 296;  
+const int p3 = 330;  
+const int p4 = 349;  
+const int p5 = 392;  
+const int p6 = 440;  
+const int p7 = 494;  
+
+const int g1 = 523;  
+const int g2 = 587;  
+const int g3 = 659;  
+const int g4 = 698;  
+const int g5 = 784;  
+const int g6 = 880;  
+const int g7 = 988;  
+
+#define sq1 277
+#define sq2 311
+#define sq4 370
+#define sq5 415
+#define sq6 466
+#define s1 554
+#define s2 622
+#define s4 740
+#define s5 831
+#define s6 932
+#define sg1 1046
+#define sg2 1245
+#define sg4 1480
+#define sg5 1661
+#define sg6 1865
+
+int main()
+{
+    int pai=500,ban=250;
+    int ting=128;
+
+    Sleep(1000);
+
+    //=================qianzou
+    Beep(q6,ban);
+    Beep(q5,ban);
+    Beep(p6,ban);
+    Beep(p3,ban);
+    Beep(p2,ban);
+    Beep(p3,ban/2);
+    Beep(p2,ban/2);
+    Beep(p1,ban);
+    Beep(p2,ban);
+
+    Beep(p3,ban);
+    Beep(p2,ban);
+    Beep(p3,ban);
+    Beep(p5,ban);
+    Beep(p3,ban);
+    Beep(p5,ban/2);
+    Beep(p3,ban/2);
+    Beep(p2,ban);
+    Beep(p3,ban/2);
+    Beep(p2,ban/2);
+
+    Beep(q6,ban);
+    Beep(q5,ban);
+    Beep(p6,ban);
+    Beep(p3,ban);
+    Beep(p2,ban);
+    Beep(p3,ban/2);
+    Beep(p2,ban/2);
+    Beep(p1,ban);
+    Beep(p2,ban);
+
+    Beep(p3,ban);
+    Beep(p2,ban);
+    Beep(p3,ban);
+    Beep(p2,ban);
+    Beep(p3,pai);
+    Beep(p5,ban/2);
+    Beep(p3,ban/2);
+    Beep(p2,ban/2);
+    Beep(p1,ban/2);
+
+    Beep(q6,ban);
+    Beep(q5,ban);
+    Beep(p6,ban);
+    Beep(p3,ban);
+    Beep(p2,ban);
+    Beep(p3,ban/2);
+    Beep(p2,ban/2);
+    Beep(p1,ban);
+    Beep(p2,ban);
+
+    Beep(p3,ban);
+    Beep(p2,ban);
+    Beep(p3,ban);
+    Beep(p5,ban);
+    Beep(p3,ban);
+    Beep(p5,ban/2);
+    Beep(p3,ban/2);
+    Beep(p2,ban);
+    Beep(p3,ban/2);
+    Beep(p2,ban/2);
+
+    Beep(q6,ban);
+    Beep(q5,ban);
+    Beep(p6,ban);
+    Beep(p3,ban);
+    Beep(p2,ban);
+    Beep(p3,ban/2);
+    Beep(p2,ban/2);
+    Beep(p1,ban);
+    Beep(p2,ban);
+
+    Beep(q6,ban);
+    Beep(q5,ban);
+    Beep(q6,ban);
+    Beep(q5,ban);
+    Beep(q6,pai*2);
+
+    Beep(p6,pai*4);
+
+    Beep(g3,pai);
+    Beep(g5,pai);
+    Beep(g3,pai);
+    Beep(g2,ban);
+    Beep(g3,ban/2);
+    Beep(g2,ban/2);
+
+    Beep(p6,pai);
+    Beep(g2,pai);
+    Beep(g3,pai);
+    Beep(g1,ban);
+    Beep(g2,ban);
+
+    Beep(g5,pai);
+    Beep(g3,pai);
+    Beep(g2,pai);
+    Beep(g3,pai);
+
+    Beep(p6,pai*4);
+
+    Beep(g1,pai);
+    Beep(g5,pai);
+    Beep(g3,pai);
+    Beep(g2,pai);
+
+    Beep(g2,pai*2);
+    Beep(g1,pai+ban);
+    Beep(g2,ban);
+
+    Beep(p5,pai);
+    Beep(g2,pai);
+    Beep(g1,pai);
+    Beep(p7,pai);
+
+    Beep(p6,pai*4);
+
+    Beep(g3,pai);
+    Beep(g5,pai);
+    Beep(g3,pai);
+    Beep(g2,pai);
+
+    Beep(g2,pai*2);
+    Beep(g3,pai*2);
+
+    Beep(g5,pai);
+    Beep(g6,ban);
+    Beep(g5,ban/2);
+    Beep(g3,ban/2);
+    Beep(g2,pai);
+    Beep(g3,pai);
+
+    Beep(g1,pai);
+    Beep(g5,pai);
+    Beep(g3,pai);
+    Beep(g2,pai);
+
+    Beep(g2,pai*2);
+    Beep(g1,pai*2);
+
+    Beep(p5,pai);
+    Beep(g1,ban);
+    Beep(g2,ban);
+    Beep(g1,pai);
+    Beep(p7,pai);
+
+    //===================zhenpian
+    Beep(p6,pai);
+    //====================1st
+    Beep(g6,pai);
+    Beep(g6,pai);
+    Beep(g2,ban);
+    Beep(g1,ban);
+
+    Beep(g2,ban);
+    Beep(g1,pai);
+    Beep(g3,ban);
+    Beep(g3,ban);
+    Beep(g3,ban);
+    Beep(g2,ban);
+    Beep(g1,ban);
+
+    Beep(g2,pai);
+    Beep(g2,ban);
+    Beep(g1,ban);
+    Beep(g2,pai);
+    Beep(g2,ban);
+    Beep(g1,ban);
+
+    Beep(g2,ban);
+    Beep(g3,pai);
+    Beep(g5,ban);
+    Beep(g5,ban);
+    Beep(g2,pai);
+    Beep(g3,ban);
+
+    Beep(g3,pai);
+    Beep(g6,pai);
+    Beep(g6,pai);
+    Beep(g2,ban);
+    Beep(g1,ban);
+
+    Beep(g2,ban);
+    Beep(g3,ban);
+    Beep(g5,ban);
+    Beep(g3,ban);
+    Sleep(ban);
+    Beep(g3,ban);
+    Beep(g2,ban);
+    Beep(g1,ban);
+
+    Beep(g2,pai);
+    Beep(g2,ban);
+    Beep(g1,ban);
+    Beep(g2,pai);
+    Beep(g2,ban);
+    Beep(g1,ban);
+
+    Beep(g3,ban);
+    Beep(g2,pai);
+    Beep(p6,ban);
+    Beep(p6,ban);
+    Beep(p5,pai);
+    Beep(p6,ban);
+
+    Beep(p6,pai);
+    Beep(g6,pai);
+    Beep(g6,pai);
+    Beep(g2,ban);
+    Beep(g1,ban);
+
+    Beep(g2,ban);
+    Beep(g1,pai);
+    Beep(g3,ban);
+    Sleep(ban);
+    Beep(g3,ban);
+    Beep(g2,ban);
+    Beep(g1,ban);
+
+    Beep(g2,pai);
+    Beep(g2,ban);
+    Beep(g1,ban);
+    Beep(g2,pai);
+    Beep(g2,ban);
+    Beep(g1,ban);
+
+    Beep(g2,ban);
+    Beep(g3,pai);
+    Beep(g5,ban);
+    Beep(g5,ban);
+    Beep(g2,pai);
+    Beep(g3,ban);
+
+    Beep(g3,pai);
+    Beep(g6,pai);
+    Beep(g6,pai);
+    Beep(g2,ban);
+    Beep(g1,ban);
+
+    Beep(g2,ban);
+    Beep(g3,ban);
+    Beep(g5,ban);
+    Beep(g3,ban);
+    Sleep(ban);
+    Beep(g3,ban);
+    Beep(g2,ban);
+    Beep(g1,ban);
+
+    Beep(g2,pai);
+    Beep(g2,ban);
+    Beep(g1,ban);
+    Beep(g2,pai);
+    Beep(g2,ban);
+    Beep(g1,ban);
+
+    Beep(g3,ban);
+    Beep(g2,pai);
+    Beep(p6,ban);
+    Beep(p6,ban);
+    Beep(p5,pai);
+    Beep(p6,ban);
+
+    Beep(p6,pai);
+    Beep(g1,pai);
+    Beep(p7,pai);
+    Beep(p6,pai);
+
+    Beep(p6,ban);
+    Beep(p5,ban);
+    Beep(p5,ban);
+    Beep(p6,pai);
+    Beep(p5,ban);
+    Beep(p6,pai);
+
+    Beep(p6,ban);
+    Beep(p5,pai);
+    Beep(p6,ban);
+    Beep(p5,pai);
+    Beep(p6,ban);
+    Beep(p5,ban);
+
+    Beep(p5,ban);
+    Beep(p6,ban);
+    Beep(p5,pai);
+    Beep(p6,ban);
+    Beep(g1,ban);
+    Beep(g2,ban);
+
+    Beep(g3,ban);
+    Beep(g2,pai);
+    Beep(g3,ban);
+    Beep(g2,ban);
+    Beep(g2,pai);
+    Beep(g3,ban);
+
+    Beep(g3,pai*2);
+    Sleep(pai);
+    Beep(p3,ban);
+    Beep(p5,ban);
+
+    Beep(p6,ban);
+    Beep(p5,pai);
+    Beep(g3,ban);
+    Beep(g3,ban);
+    Beep(g2,ban);
+    Beep(g1,ban);   
+    Beep(g2,ban);
+
+    Beep(g3,ban);
+    Beep(g5,ban);
+    Beep(g6,ban);
+    Beep(g3,ban);
+    Sleep(ban);
+    Beep(g3,ban);
+    Beep(g2,ban);
+    Beep(g1,ban);
+
+    Beep(g2,ban/2+ban);
+    Beep(g3,ban/2+ban);
+    Beep(g3,ban);
+    Beep(p6,ban);
+    Sleep(ban);
+    Beep(g3,ban);
+    Beep(g2,ban);
+    Beep(g1,ban);
+
+    Beep(g2,ban/2+ban);
+    Beep(g3,ban/2);
+    Beep(g3,ban);
+    Beep(g5,ban);
+    Beep(g2,ban);
+    Beep(g1,ban);
+    Beep(p6,ban);
+    Beep(g1,ban);
+
+    Beep(g2,ban+ban/2);
+    Beep(g1,ban/2+ban);
+    Beep(g3,ban);
+    Sleep(ban);
+    Beep(g2,ban);
+    Beep(g1,ban);
+    Beep(g2,ban);   
+
+    Beep(g3,ban);
+    Beep(g5,ban);
+    Beep(g6,ban);
+    Beep(g3,pai);
+    Beep(g3,ban);
+    Beep(g2,ban);
+    Beep(g1,ban);
+
+    Beep(g2,ban+ban/2);
+    Beep(g1,ban/2);
+    Beep(g1,ban);
+    Beep(g2,ban);
+    Beep(g2,ban+ban/2);
+    Beep(g1,ban/2);
+    Beep(g1,ban);
+    Beep(g2,ban);
+
+    Beep(g2,ban);
+    Beep(g1,ban);
+    Beep(g2,ban);
+    Beep(g3,ban);
+    Beep(g2,ban);
+    Beep(g1,ban);
+    Beep(p6,ban);
+    Beep(p6,ban);
+
+    Beep(g2,ban);
+    Beep(g1,pai);
+    Beep(g3,ban);
+    Beep(g3,ban);
+    Beep(g2,ban);
+    Beep(g1,ban);
+    Beep(g2,ban);
+
+    Beep(g3,ban);
+    Beep(g5,ban);
+    Beep(g6,ban);
+    Beep(g3,pai);
+    Beep(g3,ban);
+    Beep(g2,ban);
+    Beep(g1,ban);
+
+    Beep(g2,ban/2+ban);
+    Beep(g3,ban/2+ban);
+    Beep(g3,ban);
+    Beep(p6,ban);
+    Sleep(ban);
+    Beep(g3,ban);
+    Beep(g2,ban);
+    Beep(g1,ban);
+
+    Beep(g2,ban/2+ban);
+    Beep(g3,ban/2);
+    Beep(g3,ban);
+    Beep(g5,ban);
+    Beep(g2,ban);
+    Beep(g1,ban);
+    Beep(p6,ban);
+    Beep(g1,ban);
+
+    Beep(g2,ban+ban/2);
+    Beep(g1,ban/2+ban);
+    Beep(g3,ban);
+    Sleep(ban);
+    Beep(g2,ban);
+    Beep(g1,ban);
+    Beep(g2,ban);   
+
+    Beep(g3,ban);
+    Beep(g5,ban);
+    Beep(g6,ban);
+    Beep(g3,pai);
+    Beep(g3,ban);
+    Beep(g2,ban);
+    Beep(g1,ban);
+
+    Beep(g2,ban+ban/2);
+    Beep(g1,ban/2);
+    Beep(g1,ban);
+    Beep(g2,ban);
+    Beep(g2,ban+ban/2);
+    Beep(g1,ban/2);
+    Beep(g1,ban);
+    Beep(g2,ban);
+
+    Beep(g2,ban);
+    Beep(g1,ban);
+    Beep(g2,ban);
+    Beep(g3,ban);
+    Beep(g2,ban);
+    Beep(g1,ban);
+    Beep(g1,ban);
+    Beep(p5,ban);
+
+    Beep(p6,pai*4);
+
+    //=======================2nd
+    Beep(g6,pai);
+    Beep(g6,pai);
+    Beep(g2,ban);
+    Beep(g1,ban);
+
+    Beep(g2,ban);
+    Beep(g1,pai);
+    Beep(g3,ban);
+    Beep(g3,ban);
+    Beep(g3,ban);
+    Beep(g2,ban);
+    Beep(g1,ban);
+
+    Beep(g2,pai);
+    Beep(g2,ban);
+    Beep(g1,ban);
+    Beep(g2,pai);
+    Beep(g2,ban);
+    Beep(g1,ban);
+
+    Beep(g2,ban);
+    Beep(g3,pai);
+    Beep(g5,ban);
+    Beep(g5,ban);
+    Beep(g2,pai);
+    Beep(g3,ban);
+
+    Beep(g3,pai);
+    Beep(g6,pai);
+    Beep(g6,pai);
+    Beep(g2,ban);
+    Beep(g1,ban);
+
+    Beep(g2,ban);
+    Beep(g3,ban);
+    Beep(g5,ban);
+    Beep(g3,ban);
+    Sleep(ban);
+    Beep(g3,ban);
+    Beep(g2,ban);
+    Beep(g1,ban);
+
+    Beep(g2,pai);
+    Beep(g2,ban);
+    Beep(g1,ban);
+    Beep(g2,pai);
+    Beep(g2,ban);
+    Beep(g1,ban);
+
+    Beep(g2,ban);
+    Beep(g3,pai);
+    Beep(g2,ban);
+    Beep(g2,ban);
+    Beep(g1,pai);
+    Beep(p6,ban);
+
+    Beep(p6,pai);
+    Beep(g6,pai);
+    Beep(g6,pai);
+    Beep(g2,ban);
+    Beep(g1,ban);
+
+    Beep(g2,ban);
+    Beep(g1,pai);
+    Beep(g3,ban);
+    Sleep(ban);
+    Beep(g3,ban);
+    Beep(g2,ban);
+    Beep(g1,ban);
+
+    Beep(g2,pai);
+    Beep(g2,ban);
+    Beep(g1,ban);
+    Beep(g2,pai);
+    Beep(g2,ban);
+    Beep(g1,ban);
+
+    Beep(g2,ban);
+    Beep(g3,pai);
+    Beep(g5,ban);
+    Beep(g5,ban);
+    Beep(g2,pai);
+    Beep(g3,ban);
+
+    Beep(g3,pai);
+    Beep(g6,pai);
+    Beep(g6,pai);
+    Beep(g2,ban);
+    Beep(g1,ban);
+
+    Beep(g2,ban);
+    Beep(g3,ban);
+    Beep(g5,ban);
+    Beep(g3,ban);
+    Sleep(ban);
+    Beep(g3,ban);
+    Beep(g2,ban);
+    Beep(g1,ban);
+
+    Beep(g2,pai);
+    Beep(g2,ban);
+    Beep(g1,ban);
+    Beep(g2,pai);
+    Beep(g2,ban);
+    Beep(g1,ban);
+
+    Beep(g2,ban);
+    Beep(g3,pai);
+    Beep(g2,ban);
+    Beep(g2,ban);
+    Beep(g1,pai);
+    Beep(p6,ban);
+
+    Beep(p6,pai);
+    Beep(g1,pai);
+    Beep(p7,pai);
+    Beep(p6,pai);
+
+    Beep(p6,ban);
+    Beep(p5,ban);
+    Beep(p5,ban);
+    Beep(p6,pai);
+    Beep(p5,ban);
+    Beep(p6,pai);
+
+    Beep(p6,ban);
+    Beep(p5,pai);
+    Beep(p6,ban);
+    Beep(p5,pai);
+    Beep(p6,ban);
+    Beep(p5,ban);
+
+    Beep(p5,ban);
+    Beep(p6,ban);
+    Beep(p5,pai);
+    Beep(p6,ban);
+    Beep(g1,ban);
+    Beep(g2,ban);
+
+    Beep(g3,ban);
+    Beep(g2,pai);
+    Beep(g3,ban);
+    Beep(g2,ban);
+    Beep(g2,pai);
+    Beep(g3,ban);
+
+    Beep(g3,pai*2);
+    Sleep(pai);
+    Beep(p3,ban);
+    Beep(p5,ban);
+
+    Beep(p6,ban);
+    Beep(p5,pai);
+    Beep(g3,ban);
+    Beep(g3,ban);
+    Beep(g2,ban);
+    Beep(g1,ban);   
+    Beep(g2,ban);
+
+    Beep(g3,ban);
+    Beep(g5,ban);
+    Beep(g6,ban);
+    Beep(g3,ban);
+    Sleep(ban);
+    Beep(g3,ban);
+    Beep(g2,ban);
+    Beep(g1,ban);
+
+    Beep(g2,ban/2+ban);
+    Beep(g3,ban/2+ban);
+    Beep(g3,ban);
+    Beep(p6,ban);
+    Sleep(ban);
+    Beep(g3,ban);
+    Beep(g2,ban);
+    Beep(g1,ban);
+
+    Beep(g2,ban/2+ban);
+    Beep(g3,ban/2);
+    Beep(g3,ban);
+    Beep(g5,ban);
+    Beep(g2,ban);
+    Beep(g1,ban);
+    Beep(p6,ban);
+    Beep(g1,ban);
+
+    Beep(g2,ban+ban/2);
+    Beep(g1,ban/2+ban);
+    Beep(g3,ban);
+    Sleep(ban);
+    Beep(g2,ban);
+    Beep(g1,ban);
+    Beep(g2,ban);   
+
+    Beep(g3,ban);
+    Beep(g5,ban);
+    Beep(g6,ban);
+    Beep(g3,pai);
+    Beep(g3,ban);
+    Beep(g2,ban);
+    Beep(g1,ban);
+
+    Beep(g2,ban+ban/2);
+    Beep(g1,ban/2);
+    Beep(g1,ban);
+    Beep(g2,ban);
+    Beep(g2,ban+ban/2);
+    Beep(g1,ban/2);
+    Beep(g1,ban);
+    Beep(g2,ban);
+
+    Beep(g2,ban);
+    Beep(g1,ban);
+    Beep(g2,ban);
+    Beep(g3,ban);
+    Beep(g2,ban);
+    Beep(g1,ban);
+    Beep(p6,ban);
+    Beep(g1,ban);
+
+    Beep(g2,ban);
+    Beep(g1,pai);
+    Beep(g3,ban);
+    Beep(g3,ban);
+    Beep(g2,ban);
+    Beep(g1,ban);
+    Beep(g2,ban);
+
+    Beep(g3,ban);
+    Beep(g5,ban);
+    Beep(g6,ban);
+    Beep(g3,pai);
+    Beep(g3,ban);
+    Beep(g2,ban);
+    Beep(g1,ban);
+
+    Beep(g2,ban/2+ban);
+    Beep(g3,ban/2+ban);
+    Beep(g3,ban);
+    Beep(p6,ban);
+    Sleep(ban);
+    Beep(g3,ban);
+    Beep(g2,ban);
+    Beep(g1,ban);
+
+    Beep(g2,ban/2+ban);
+    Beep(g3,ban/2);
+    Beep(g3,ban);
+    Beep(g5,ban);
+    Beep(g2,ban);
+    Beep(g1,ban);
+    Beep(p6,ban);
+    Beep(g1,ban);
+
+    Beep(g2,ban+ban/2);
+    Beep(g1,ban/2+ban);
+    Beep(g3,ban);
+    Sleep(ban);
+    Beep(g2,ban);
+    Beep(g1,ban);
+    Beep(g2,ban);   
+
+    Beep(g3,ban);
+    Beep(g5,ban);
+    Beep(g6,ban);
+    Beep(g3,pai);
+    Beep(g3,ban);
+    Beep(g2,ban);
+    Beep(g1,ban);
+
+    Beep(g2,ban+ban/2);
+    Beep(g1,ban/2);
+    Beep(g1,ban);
+    Beep(g2,ban);
+    Beep(g2,ban+ban/2);
+    Beep(g1,ban/2);
+    Beep(g1,ban);
+    Beep(g2,ban);
+
+    Beep(g2,ban);
+    Beep(g1,ban);
+    Beep(g2,ban);
+    Beep(g3,ban);
+    Beep(g2,ban);
+    Beep(g1,ban);
+    Beep(g1,ban);
+    Beep(p5,ban);
+
+    Beep(p6,pai*4);
+    //===============2nd的banzou
+
+    Beep(p6,pai*2);
+    Beep(p5,ban);
+    Beep(p6,ban);
+    Beep(p6,pai);
+
+    Beep(g2,ban);
+    Beep(g1,ban);
+    Beep(p6,ban);
+    Beep(p5,ban);
+    Beep(p6,ban);
+    Beep(g1,ban);
+    Beep(p6,pai);
+
+    Beep(p1,pai);
+    Beep(p2,pai);
+    Beep(p1,ban);
+    Beep(p7,ban);
+    Beep(g6,ban);
+    Beep(g5,ban);
+
+    Beep(g6,pai+pai/2);
+    Beep(g5,ban);
+    Beep(g3,ban);
+    Beep(g2,ban);
+    Beep(g3,ban);
+    Beep(g5,ban);
+
+    Beep(p1,pai);
+    Beep(p2,ban);
+    Beep(p3,ban);
+    Beep(p2,ban);
+    Beep(q5,ban);
+    Beep(q6,ban);
+    Beep(q6,ban);
+
+    Beep(p1,pai);
+    Beep(p2,ban);
+    Beep(p3,ban);
+    Beep(p2,ban);
+    Beep(q5,ban);
+    Beep(q5,ban);
+    Beep(q5,ban);
+
+    Beep(g1,ban);
+    Beep(g2,ban);
+    Beep(g5,pai);
+    Beep(g3,ban);
+    Beep(q2,ban);
+    Beep(q1,pai);
+
+    Beep(g2,pai);
+    Beep(p6,pai*3);
+
+    Beep(q5,pai);
+    Beep(p1,pai);
+    Beep(p2,pai);
+    Beep(p2,ban);
+    Beep(p1,ban);
+
+    Beep(q6,ban);
+    Beep(q5,ban);
+    Beep(q6,ban);
+    Beep(p3,ban);
+    Beep(p5,ban);
+    Beep(p3,ban);
+    Beep(p2,ban);
+    Beep(p3,ban);
+
+    Beep(p6,ban);
+    Beep(g1,ban);
+    Beep(g3,ban);
+    Beep(g2,ban);
+    Beep(g2,ban);
+    Beep(p5,ban);
+    Beep(p3,ban);
+    Beep(p2,ban);
+
+    Beep(p6,ban);
+    Beep(p5,ban);
+    Beep(p6,pai);
+    Beep(p6,ban);
+    Beep(p5,ban);
+    Beep(p6,ban);
+    Beep(g1,ban);
+
+    Beep(g2,ban);
+    Beep(g1,ban);
+    Beep(g2,ban);
+    Beep(g1,ban);
+    Beep(g2,ban);
+    Beep(g1,ban);
+    Beep(g2,ban);
+    Beep(g3,ban);
+
+    Beep(g5,pai*2);
+    Beep(g2,ban);
+    Beep(g3,ban);
+    Beep(g5,pai);
+
+    Beep(sg1,pai*2);
+    Beep(g7,pai*2);
+
+    Beep(g7,pai*3);
+    //=============3rd
+    Beep(p3,ban);
+    Beep(p5,ban);
+
+    Beep(p6,ban);
+    Beep(p5,pai);
+    Beep(g3,ban);
+    Beep(g3,ban);
+    Beep(g2,ban);
+    Beep(g1,ban);   
+    Beep(g2,ban);
+
+    Beep(g3,ban);
+    Beep(g5,ban);
+    Beep(g6,ban);
+    Beep(g3,ban);
+    Sleep(ban);
+    Beep(g3,ban);
+    Beep(g2,ban);
+    Beep(g1,ban);
+
+    Beep(g2,ban/2+ban);
+    Beep(g3,ban/2+ban);
+    Beep(g3,ban);
+    Beep(p6,ban);
+    Sleep(ban);
+    Beep(g3,ban);
+    Beep(g2,ban);
+    Beep(g1,ban);
+
+    Beep(g2,ban/2+ban);
+    Beep(g3,ban/2);
+    Beep(g3,ban);
+    Beep(g5,ban);
+    Beep(g2,ban);
+    Beep(g1,ban);
+    Beep(p6,ban);
+    Beep(g1,ban);
+
+    Beep(g2,ban+ban/2);
+    Beep(g1,ban/2+ban);
+    Beep(g3,ban);
+    Sleep(ban);
+    Beep(g2,ban);
+    Beep(g1,ban);
+    Beep(g2,ban);   
+
+    Beep(g3,ban);
+    Beep(g5,ban);
+    Beep(g6,ban);
+    Beep(g3,pai);
+    Beep(g3,ban);
+    Beep(g2,ban);
+    Beep(g1,ban);
+
+    Beep(g2,ban+ban/2);
+    Beep(g1,ban/2);
+    Beep(g1,ban);
+    Beep(g2,ban);
+    Beep(g2,ban+ban/2);
+    Beep(g1,ban/2);
+    Beep(g1,ban);
+    Beep(g2,ban);
+
+    Beep(g2,ban);
+    Beep(g1,ban);
+    Beep(g2,ban);
+    Beep(g3,ban/2);
+    Beep(g2,ban/2);
+    Beep(g2,pai);
+    Beep(p3,ban);
+    Beep(p5,ban);
+
+    Beep(p6,ban);
+    Beep(p5,pai);
+    Beep(g3,ban);
+    Beep(g3,ban);
+    Beep(g2,ban);
+    Beep(g1,ban);
+    Beep(g2,ban);
+
+    Beep(g3,ban);
+    Beep(g5,ban);
+    Beep(g6,ban);
+    Beep(g3,pai);
+    Beep(g3,ban);
+    Beep(g2,ban);
+    Beep(g1,ban);
+
+    Beep(g2,ban/2+ban);
+    Beep(g3,ban/2+ban);
+    Beep(g3,ban);
+    Beep(p6,ban);
+    Sleep(ban);
+    Beep(g3,ban);
+    Beep(g2,ban);
+    Beep(g1,ban);
+
+    Beep(g2,ban/2+ban);
+    Beep(g3,ban/2);
+    Beep(g3,ban);
+    Beep(g5,ban);
+    Beep(g2,ban);
+    Beep(g1,ban);
+    Beep(p6,ban);
+    Beep(g1,ban);
+
+    Beep(g2,ban+ban/2);
+    Beep(g1,ban/2+ban);
+    Beep(g3,ban);
+    Sleep(ban);
+    Beep(g2,ban);
+    Beep(g1,ban);
+    Beep(g2,ban);   
+
+    Beep(g3,ban);
+    Beep(g5,ban);
+    Beep(g6,ban);
+    Beep(g3,pai);
+    Beep(g3,ban);
+    Beep(g2,ban);
+    Beep(g1,ban);
+
+    Beep(g2,ban+ban/2);
+    Beep(g1,ban/2);
+    Beep(g1,ban);
+    Beep(g2,ban);
+    Beep(g2,ban+ban/2);
+    Beep(g1,ban/2);
+    Beep(g1,ban);
+    Beep(g2,ban);
+
+    Beep(g2,ban);
+    Beep(g1,ban);
+    Beep(g2,ban);
+    Beep(g3,ban);
+    Beep(g2,ban);
+    Beep(g1,ban);
+    Beep(g6,ban);
+    Beep(g1,ban);
+
+    //===============4th
+    Beep(p6,ban);
+    Beep(p5,pai);
+    Beep(g3,ban);
+    Beep(g3,ban);
+    Beep(g2,ban);
+    Beep(g1,ban);
+    Beep(g2,ban);
+
+    Beep(g3,ban);
+    Beep(g5,ban);
+    Beep(g6,ban);
+    Beep(g3,pai);
+    Beep(g3,ban);
+    Beep(g2,ban);
+    Beep(g1,ban);
+
+    Beep(g2,ban/2+ban);
+    Beep(g3,ban/2+ban);
+    Beep(g3,ban);
+    Beep(p6,ban);
+    Sleep(ban);
+    Beep(g3,ban);
+    Beep(g2,ban);
+    Beep(g1,ban);
+
+    Beep(g2,ban/2+ban);
+    Beep(g3,ban/2);
+    Beep(g3,ban);
+    Beep(g5,ban);
+    Beep(g2,ban);
+    Beep(g1,ban);
+    Beep(p6,ban);
+    Beep(g1,ban);
+
+    Beep(g2,ban+ban/2);
+    Beep(g1,ban/2+ban);
+    Beep(g3,ban);
+    Sleep(ban);
+    Beep(g2,ban);
+    Beep(g1,ban);
+    Beep(g2,ban);   
+
+    Beep(g3,ban);
+    Beep(g5,ban);
+    Beep(g6,ban);
+    Beep(g3,pai);
+    Beep(g3,ban);
+    Beep(g2,ban);
+    Beep(g1,ban);
+
+    Beep(g2,ban+ban/2);
+    Beep(g1,ban/2);
+    Beep(g1,ban);
+    Beep(g2,ban);
+    Beep(g2,ban+ban/2);
+    Beep(g1,ban/2);
+    Beep(g1,ban);
+    Beep(g2,ban);
+
+    Beep(g2,ban);
+    Beep(g1,ban);
+    Beep(g2,ban);
+    Beep(g3,ban);
+    Beep(g2,ban);
+    Beep(g1,ban);
+    Beep(g6,ban);
+    Beep(g1,ban);
+
+    Beep(g2,ban);
+    Beep(g1,ban);
+    Beep(g2,ban);
+    Beep(g3,ban);
+    Beep(g5,ban);
+    Beep(g3,ban);
+    Beep(g3,ban);
+    Beep(g5,ban);
+
+    Beep(g6,pai*4);
+
+    Beep(g6,pai*4);
+
+    Sleep(1000);
+
+    return 0;
+}
